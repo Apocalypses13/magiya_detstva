@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магия детства - Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка с навигацией -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#main">Главная</a>
+            <a href="#about">О нас</a>
+            <a href="prices.html">Цены</a>
+            <a href="#contacts">Контакты</a>
+            <a href="gallery.html">Фото</a>
+        </nav>
+    </header>
+
+    <!-- Секция Главная -->
+    <section id="main" class="main-section">
+        <div class="text-block">
+            <p class="small-text">Агентство детских праздников</p>
+            <h1>Магия детства</h1>
+            <p class="sub-text">Приглашаем вам окунуться в мир фантазий и волшебства</p>
+            <button class="order-btn" id="orderBtn">Заказать</button>
+        </div>
+    </section>
+
+    <!-- Секция О нас -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>О нас</h2>
+            <p class="section-subtitle">Наши преимущества</p>
+            
+            <div class="advantages">
+                <div class="advantage-card">
+                    <div class="card-icon">🚗</div>
+                    <h3>Выезжаем в любую точку СПБ и ЛО</h3>
+                    <p>Организуем праздник где угодно - дома, в кафе, на природе</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="card-icon">📸</div>
+                    <h3>Украшаем фотозону</h3>
+                    <p>Создаем волшебные уголки для незабываемых фото</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="card-icon">🏰</div>
+                    <h3>Имеем собственный просторный лофт зал</h3>
+                    <p>Уютное пространство для праздников любой тематики</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция Контакты -->
+<section id="contacts" class="contacts-section">
+    <div class="container">
+        <h2>Контакты</h2>
+        
+        <div class="contacts-content">
+            <!-- Левая часть - карта -->
+            <div class="map-container">
+                <div class="map-frame">
+                    <div class="real-map">
+                        <img src="images/map-vosstaniya.jpg" alt="Карта площади Восстания">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Правая часть - информация -->
+            <div class="contact-info">
+                <h3>Наша студия</h3>
+                <div class="info-item">
+                    <strong>Адрес:</strong>
+                    <p>г. Санкт-Петербург, пл. Восстания, 10</p>
+                </div>
+                <div class="info-item">
+                    <strong>Метро:</strong>
+                    <p>Площадь Восстания (2 минуты пешком)</p>
+                </div>
+                <div class="info-item">
+                    <strong>Часы работы:</strong>
+                    <p>Ежедневно с 9:00 до 21:00</p>
+                </div>
+                <div class="welcome-text">
+                    <p>Ждем вас в гости!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Левая часть - навигация -->
+            <div class="footer-nav">
+                <h4>Навигация</h4>
+                <a href="#main">Главная</a>
+                <a href="#about">О нас</a>
+                <a href="prices.html">Цены</a>
+                <a href="#contacts">Контакты</a>
+                <a href="gallery.html">Фото</a>
+            </div>
+            
+            <!-- Правая часть - контакты -->
+            <div class="footer-contacts">
+                <h4>Контакты</h4>
+                <p class="phone">+8 (977) 477-02-01</p>
+                <p class="email">viktori4klochkova@yandex.ru</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Окно заявки -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2>Оставьте заявку и мы вам перезвоним</h2>
+            <form class="form">
+                <input type="text" placeholder="Имя" required>
+                <input type="tel" placeholder="Телефон" required>
+                <button type="submit">Оставить заявку</button>
+            </form>
+            <button class="close-btn" id="closeBtn">×</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

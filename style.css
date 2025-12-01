@@ -1,0 +1,669 @@
+/* Стили для главной страницы */
+.main-section {
+    background-image: url('images/party-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.text-block {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    text-align: center;
+    max-width: 600px;
+    border-radius: 25px; /* Добавляем закругление */
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.2); /* Легкая тень для объема */
+}
+
+.small-text {
+    color: #ff69b4;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #ff1493;
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.sub-text {
+    color: #666;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.order-btn {
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "Comic Sans MS", cursive;
+    border-radius: 30px; /* Делаем кнопку закругленной */
+    transition: all 0.3s ease; /* Плавный переход для hover эффекта */
+}
+
+.order-btn:hover {
+    background: #ff1493;
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+}
+
+/* Также обновим модальное окно для единообразия */
+.modal-content {
+    background: white;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    border-radius: 20px; /* Закругляем модальное окно */
+}
+
+.form input {
+    padding: 12px;
+    border: 1px solid #ff69b4;
+    font-size: 16px;
+    font-family: "Comic Sans MS", cursive;
+    border-radius: 10px; /* Закругляем поля ввода */
+}
+
+.form button {
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: "Comic Sans MS", cursive;
+    border-radius: 10px; /* Закругляем кнопку в форме */
+}
+
+/* Обновим карточки преимуществ на главной странице */
+.advantage-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px; /* Увеличим закругление карточек */
+    border: 2px solid #ffb6c1;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.1);
+}
+
+/* Обновим блоки информации в контактах */
+.info-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #fff5f7;
+    border-radius: 15px; /* Увеличим закругление */
+    border-left: 4px solid #ff69b4;
+}
+
+/* Обновим футер */
+.footer {
+    background: #ff69b4;
+    color: white;
+    padding: 40px 0;
+    border-top-left-radius: 20px; /* Закругляем верхние углы футера */
+    border-top-right-radius: 20px;
+}
+/* Базовые настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Comic Sans MS", cursive;
+    background: white;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Шапка */
+.header {
+    background: #ff69b4;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+}
+
+.nav a:hover {
+    background: white;
+    color: #ff69b4;
+}
+
+/* Секция Главная */
+.main-section {
+    background-image: url('images/party-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.text-block {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.small-text {
+    color: #ff69b4;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #ff1493;
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.sub-text {
+    color: #666;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.order-btn {
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "Comic Sans MS", cursive;
+}
+
+.order-btn:hover {
+    background: #ff1493;
+}
+
+/* Секция О нас */
+.about-section {
+    padding: 80px 0;
+    background: #fff5f7;
+}
+
+.about-section h2 {
+    color: #ff1493;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #ff69b4;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.advantages {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.advantage-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #ffb6c1;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.1);
+}
+
+.card-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.advantage-card h3 {
+    color: #ff1493;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.advantage-card p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Секция Контакты */
+.contacts-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.contacts-section h2 {
+    color: #ff1493;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contacts-content {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.map-placeholder {
+    flex: 1;
+}
+
+.map-placeholder p {
+    color: #ff69b4;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.map-frame {
+    background: #fff5f7;
+    border: 2px solid #ffb6c1;
+    border-radius: 10px;
+    padding: 60px 20px;
+    text-align: center;
+    color: #666;
+}
+
+.studios-list {
+    flex: 1;
+}
+
+.studios-list h3 {
+    color: #ff1493;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.studio-item {
+    background: #fff5f7;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #ff69b4;
+}
+
+.studio-item h4 {
+    color: #ff1493;
+    margin-bottom: 5px;
+}
+
+.studio-item p {
+    color: #666;
+}
+
+/* Футер */
+.footer {
+    background: #ff69b4;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-nav h4,
+.footer-contacts h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.footer-nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.phone,
+.email {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Окно заявки */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+}
+
+.modal-content h2 {
+    color: #ff1493;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form input {
+    padding: 12px;
+    border: 1px solid #ff69b4;
+    font-size: 16px;
+    font-family: "Comic Sans MS", cursive;
+}
+
+.form button {
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: "Comic Sans MS", cursive;
+}
+
+.form button:hover {
+    background: #ff1493;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ff69b4;
+}
+
+/* Стили для страницы Цены */
+.prices-main {
+    margin-top: 80px;
+    padding: 40px 0;
+}
+
+.prices-title {
+    color: #ff1493;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.packages {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.package {
+    background: #fff5f7;
+    padding: 30px;
+    border: 2px solid #ffb6c1;
+    max-width: 350px;
+    text-align: center;
+}
+
+.package h2 {
+    color: #ff1493;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.age {
+    color: #ff69b4;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.includes {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.includes p {
+    color: #ff1493;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.includes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.includes li {
+    color: #666;
+    margin-bottom: 8px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.includes li:before {
+    content: "•";
+    color: #ff69b4;
+    position: absolute;
+    left: 0;
+}
+
+.price {
+    color: #ff1493;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Стили для страницы Фото */
+.gallery-main {
+    margin-top: 80px;
+    padding: 40px 0;
+}
+
+.gallery-title {
+    color: #ff1493;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.photos img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid #ffb6c1;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+/* Простая анимация появления */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Задержка для каждой фотографии */
+.photos img:nth-child(1) { animation-delay: 0.1s; }
+.photos img:nth-child(2) { animation-delay: 0.2s; }
+.photos img:nth-child(3) { animation-delay: 0.3s; }
+.photos img:nth-child(4) { animation-delay: 0.4s; }
+.photos img:nth-child(5) { animation-delay: 0.5s; }
+.photos img:nth-child(6) { animation-delay: 0.6s; }
+.photos img:nth-child(7) { animation-delay: 0.7s; }
+.photos img:nth-child(8) { animation-delay: 0.8s; }
+.photos img:nth-child(9) { animation-delay: 0.9s; }
+.photos img:nth-child(10) { animation-delay: 1s; }
+
+
+/* Стили для карты с реальным изображением */
+.map-container {
+    flex: 1;
+}
+
+.map-frame {
+    background: #f8f8f8;
+    padding: 20px;
+    border: 2px solid #ffb6c1;
+    border-radius: 10px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.real-map {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.real-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.map-marker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));
+}
+
+/* Остальные стили остаются такими же */
+.contact-info {
+    flex: 1;
+    padding: 0 30px;
+}
+
+.contact-info h3 {
+    color: #ff1493;
+    font-size: 28px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.info-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #fff5f7;
+    border-radius: 8px;
+    border-left: 4px solid #ff69b4;
+}
+
+.info-item strong {
+    color: #ff1493;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    color: #666;
+    font-size: 16px;
+    margin: 0;
+}
+
+.welcome-text {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background: #ff69b4;
+    color: white;
+    border-radius: 10px;
+}
+
+.welcome-text p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .contacts-content {
+        flex-direction: column;
+    }
+    
+    .map-frame {
+        height: 300px;
+        margin-bottom: 30px;
+    }
+    
+    .contact-info {
+        padding: 0;
+    }
+}
