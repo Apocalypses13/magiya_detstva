@@ -1,3 +1,36 @@
+/* Делаем шапку адаптивной */
+header {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет элементам переноситься */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Логотип */
+.logo {
+    font-size: 24px;
+    flex-shrink: 0; /* Чтобы логотип не сжимался */
+}
+
+/* Навигация */
+nav ul {
+    display: flex;
+    flex-wrap: wrap; /* Пункты меню будут переноситься */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px; /* Расстояние между пунктами */
+}
+
+nav a {
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    white-space: nowrap; /* Текст не переносится внутри ссылки */
+}
 /* Стили для главной страницы */
 .main-section {
     background-image: url('images/party-background.jpg');
@@ -666,4 +699,5 @@ h1 {
     .contact-info {
         padding: 0;
     }
+
 }
