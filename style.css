@@ -1,51 +1,63 @@
-/* Стили для главной страницы */
-.main-section {background-image: url('images/party-background.jpg');
+image: url('images/party-background.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 60px;} /* Отступ сверху */
+    margin-top: 60px;}
 
 .text-block {background: rgba(255, 255, 255, 0.9);
-    padding: 40px; /* Внутренний отступ */
+    padding: 40px;
     text-align: center;
     max-width: 600px;
-    border-radius: 25px; /* Закругление */
+    border-radius: 25px; /* Добавляем закругление */
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.2); /* Легкая тень для объема */}
 
 
-.small-text {color: #ff69b4;
-    font-size: 20px; 
-    margin-bottom: 10px;} /* Отступ снизу */
+.small-text {
+    color: #ff69b4;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 
-h1 {color: #ff1493;
+h1 {
+    color: #ff1493;
     font-size: 60px;
-    margin-bottom: 15px;}
+    margin-bottom: 15px;
+}
 
-.sub-text {color: #666;
+.sub-text {
+    color: #666;
     font-size: 22px;
-    margin-bottom: 25px;}
+    margin-bottom: 25px;
+}
 
-.order-btn { background: #ff69b4; /* Кнопка */
+ .order-btn {
+    background: #ff69b4;
     color: white;
-    border: none; /* Без рамки */
+    border: none;
     padding: 15px 40px;
-    font-size: 20px; 
+    font-size: 20px;
     cursor: pointer;
     font-family: "Comic Sans MS", cursive;
-    border-radius: 30px; /* Закругление */
+    border-radius: 30px; /* Делаем кнопку закругленной */
+    transition: all 0.3s ease; /* Плавный переход для hover эффекта */
+}
 
-.order-btn:hover {background: #ff1493;} /* Кнопка при наведении */
+.order-btn:hover {
+    background: #ff1493;
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+}
 
-            /* Также обновим модальное окно для единообразия */
-.modal-content {
-    background: white;
+/* Также обновим модальное окно для единообразия */
+.modal-content { background: white;
     padding: 30px;
     width: 90%;
     max-width: 400px;
     position: relative;
-    border-radius: 20px; /* Закругляем модальное окно */
-}
+    border-radius: 20px; /* Закругляем модальное окно */}
+            
 .form input {
     padding: 12px;
     border: 1px solid #ff69b4;
@@ -633,5 +645,6 @@ h1 {
     font-weight: bold;
     margin: 0;
 }
+
 
 
