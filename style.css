@@ -37,6 +37,15 @@ h1 {color: #ff1493;
 
 .order-btn:hover {background: #ff1493;} /* Кнопка при наведении */
 
+            /* Также обновим модальное окно для единообразия */
+.modal-content {
+    background: white;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    border-radius: 20px; /* Закругляем модальное окно */
+}
 .form input {
     padding: 12px;
     border: 1px solid #ff69b4;
@@ -624,4 +633,5 @@ h1 {
     font-weight: bold;
     margin: 0;
 }
+
 
