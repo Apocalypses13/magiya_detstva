@@ -109,7 +109,7 @@ h3 { font-size: 24px; margin-bottom: 15px; }
 .studio-item, .info-item {text-align: left; background: #fff5f7;
     border-left: 4px solid #ff69b4;}
 
-.card-icon { font-size: 20 px; margin-bottom: 20px; }
+.card-icon { font-size: 20px; margin-bottom: 20px; }
 
 /* Списки */
 .includes ul {
@@ -280,6 +280,7 @@ h3 { font-size: 24px; margin-bottom: 15px; }
     .contact-info { padding: 0; }
     .footer-content { flex-direction: column; gap: 30px; }
 }
+
 
 
 
