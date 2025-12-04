@@ -6,20 +6,16 @@ const form = document.querySelector('.form');
 
 // Открыть окно заявки
 orderBtn.addEventListener('click', function() {
-    modal.style.display = 'flex';
-});
+    modal.style.display = 'flex';});
 
 // Закрыть окно заявки
 closeBtn.addEventListener('click', function() {
-    modal.style.display = 'none';
-});
+    modal.style.display = 'none';});
 
 // Закрыть при клике вне окна
 modal.addEventListener('click', function(e) {
     if (e.target === modal) {
-        modal.style.display = 'none';
-    }
-});
+        modal.style.display = 'none';}});
 
 // Обработка формы
 form.addEventListener('submit', function(e) {
@@ -37,8 +33,7 @@ form.addEventListener('submit', function(e) {
     
     // Закрываем окно и очищаем форму
     modal.style.display = 'none';
-    this.reset();
-});
+    this.reset();});
 
 // Плавная прокрутка для якорных ссылок
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -48,8 +43,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         if (target) {
             target.scrollIntoView({
                 behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});
+                block: 'start' }); } });});
