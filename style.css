@@ -1,21 +1,13 @@
-/* Базовые настройки */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Настройки для всего сайта*/
+* { margin: 0; /* Убрали все внешние отступы */
+    padding: 0; /*Убрали все внутренние отступы */
+    box-sizing: border-box;}
 
-body {
-    font-family: "Comic Sans MS", cursive;
-    background: white;
-    line-height: 1.6;
-}
+body {font-family: "Comic Sans MS", cursive;  background: white; line-height: 1.6;}
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+.container {max-width: 1200px; 
+            margin: 0 auto; /*  Центрирование по горизонтали */
+            padding: 0 20px;} /* Внутренние отступы слева/справа */
 
 /* Общие стили для закруглений и теней */
 .rounded { border-radius: 20px; }
@@ -27,57 +19,44 @@ body {
 /* Цветовая палитра */
 .pink-light { color: #ff69b4; }
 .pink-dark { color: #ff1493; }
-.pink-border { border-color: #ffb6c1; }
-.bg-pink { background: #ff69b4; }
+.pink-border { border-color: #ffb6c1; } /* Рамка */
+.bg-pink { background: #ff69b4; }  /* Фон */
 .bg-pink-light { background: #fff5f7; }
-.bg-pink-hover:hover { background: #ff1493; }
+.bg-pink-hover:hover { background: #ff1493; }  /* Темнеет при наведении  */
 
 /* Шапка */
-.header {
-    background: #ff69b4;
+.header {background: #ff69b4;
     padding: 15px;
     position: fixed;
     width: 100%;
-    top: 0;
-    z-index: 1000;
-}
+    top: 0; /* Прижата к верху */
+    z-index: 1000;}  /* Находится поверх других элементов */
 
-.nav {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
+.nav {display: flex;   /* Расположение элементов в строку */
+    justify-content: center; /* 2. Выравнивает элементы по центру по горизонтали */
+    gap: 30px;} /* 3. Расстояние между пунктами меню */
 
-.nav a {
-    color: white;
-    text-decoration: none;
+.nav a {color: white;
+    text-decoration: none;  /* 2. Убирает подчёркивание */
     font-size: 18px;
-    padding: 8px 16px;
-}
+    padding: 8px 16px;}
 
-.nav a:hover {
-    background: white;
-    color: #ff69b4;
-}
+.nav a:hover {background: white;
+    color: #ff69b4;}
 
 /* Главная страница */
-.main-section {
-    background: url('images/party-background.jpg') center/cover no-repeat;
-    height: 100vh;
-    display: flex;
+.main-section {background: url('images/party-background.jpg') center/cover  /* Растягивает на весь блок */
+    no-repeat; height: 100vh; display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 60px;
-}
+    margin-top: 60px;}
 
-.text-block {
-    background: rgba(255, 255, 255, 0.9);
+.text-block {background: rgba(255, 255, 255, 0.9);
     padding: 40px;
     text-align: center;
     max-width: 600px;
-    border-radius: 25px;
-    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.2);
-}
+    border-radius: 25px; /* Закругление углов */
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.2); }
 
 h1 { font-size: 60px; margin-bottom: 15px; }
 h2 { font-size: 48px; text-align: center; margin-bottom: 40px; }
@@ -306,5 +285,6 @@ h3 { font-size: 24px; margin-bottom: 15px; }
     .contact-info { padding: 0; }
     .footer-content { flex-direction: column; gap: 30px; }
 }
+
 
 
