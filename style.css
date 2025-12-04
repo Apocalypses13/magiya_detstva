@@ -105,13 +105,6 @@ h3 { font-size: 24px; margin-bottom: 15px; }
 /* Особый фон для карточек с пакетами услуг */
 .package { background: #fff5f7; }
 
-/*уменьшение навазний пакетов */
-.packages .package h2 {font-size: 22px !important;
-    color: #ff1493;
-    text-align: center;
-    margin-bottom: 10px;
-    white-space: normal; /* Разрешает перенос строк */}
-
 /* Стили для элементов списка студий и информации */
 .studio-item, .info-item {text-align: left; background: #fff5f7;
     border-left: 4px solid #ff69b4;}
@@ -232,6 +225,7 @@ h3 { font-size: 24px; margin-bottom: 15px; }
     .contact-info { padding: 0; }
     .footer-content { flex-direction: column; /* Располагает элементы футера в колонку */
     gap: 30px; }}
+
 
 
 
