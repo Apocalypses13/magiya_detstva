@@ -58,44 +58,40 @@ body {font-family: "Comic Sans MS", cursive;  background: white; line-height: 1.
     border-radius: 25px; /* Закругление углов */
     box-shadow: 0 5px 15px rgba(255, 105, 180, 0.2); }
 
-h1 { font-size: 60px; margin-bottom: 15px; }
+h1 { font-size: 60px; margin-bottom: 15px; } /* Размер и отступ после */
 h2 { font-size: 48px; text-align: center; margin-bottom: 40px; }
 h3 { font-size: 24px; margin-bottom: 15px; }
 
 .small-text { font-size: 20px; margin-bottom: 10px; }
 .sub-text { color: #666; font-size: 22px; margin-bottom: 25px; }
 
-.order-btn, .form button {
-    background: #ff69b4;
+/* Стили для кнопок "Заказать" и кнопок в формах */
+.order-btn, .form button {background: #ff69b4;
     color: white;
     border: none;
     padding: 15px 40px;
     font-size: 20px;
-    cursor: pointer;
+    cursor: pointer; /* Записать */
     font-family: "Comic Sans MS", cursive;
     border-radius: 30px;
-    transition: all 0.3s ease;
-}
+    transition: all 0.3s ease;}  /*  Плавная анимация */
 
-.order-btn:hover, .form button:hover {
-    background: #ff1493;
-    transform: scale(1.05);
-}
+/* Стили при наведении на кнопки */
+.order-btn:hover, .form button:hover {background: #ff1493;
+    transform: scale(1.05);}  /*  Увеличивается */
 
 /* Секции с общими стилями */
 .about-section, .contacts-section, .prices-main, .gallery-main {
     padding: 80px 0;
-    margin-top: 60px;
-}
+    margin-top: 60px;}
 
+/* Специальный фон для секции "О нас" */
 .about-section { background: #fff5f7; }
 
-.advantages, .packages {
-    display: flex;
+.advantages, .packages {  display: flex;
     justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
+    gap: 30px; /*  Расстояние между элементами */
+    flex-wrap: wrap;} /* Перенос элементов на новую строку при нехватке места */
 
 /* Карточки */
 .advantage-card, .package, .studio-item, .info-item {
@@ -104,15 +100,17 @@ h3 { font-size: 24px; margin-bottom: 15px; }
     text-align: center;
     max-width: 350px;
     border: 2px solid #ffb6c1;
-    border-radius: 20px;
-}
+    border-radius: 20px;}
 
-.package { background: #fff5f7; }
+/* Особый фон для карточек с пакетами услуг */
+.package { background: #fff5f7;
+         font-size: 20px;     }
+
+/* Стили для элементов списка студий и информации */
 .studio-item, .info-item { 
     text-align: left;
     background: #fff5f7;
-    border-left: 4px solid #ff69b4;
-}
+    border-left: 4px solid #ff69b4;}
 
 .card-icon { font-size: 35px; margin-bottom: 20px; }
 
@@ -285,6 +283,7 @@ h3 { font-size: 24px; margin-bottom: 15px; }
     .contact-info { padding: 0; }
     .footer-content { flex-direction: column; gap: 30px; }
 }
+
 
 
 
