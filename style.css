@@ -201,37 +201,31 @@ h3 { font-size: 24px; margin-bottom: 15px; }
     position: relative; /* Изменить */
     border-radius: 20px;}
 
-.form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
+.form {display: flex; /* Включает гибкое расположение элементов */
+    flex-direction: column;  /* Располагает элементы в колонку */
+    gap: 15px;}
 
-.form input {
-    padding: 12px;
+.form input {padding: 12px;
     border: 1px solid #ff69b4;
     font-size: 16px;
-    border-radius: 10px;
-}
+    border-radius: 10px;}
 
-.close-btn {
-    position: absolute;
+.close-btn { position: absolute; /* Абсолютное позиционирование относительно другого контента */
     top: 10px;
     right: 15px;
     background: none;
     border: none;
     font-size: 24px;
     cursor: pointer;
-    color: #ff69b4;
-}
+    color: #ff69b4;}
 
 /* Адаптивность */
-@media (max-width: 768px) {
-    .contacts-content { flex-direction: column; }
+@media (max-width: 768px) {.contacts-content { flex-direction: column; } /* Располагает элементы в колонку */
     .map-frame { height: 300px; margin-bottom: 30px; }
     .contact-info { padding: 0; }
-    .footer-content { flex-direction: column; gap: 30px; }
-}
+    .footer-content { flex-direction: column; /* Располагает элементы футера в колонку */
+    gap: 30px; }}
+
 
 
 
